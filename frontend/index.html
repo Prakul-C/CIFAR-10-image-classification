@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Vision Classifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<!-- Animated Background -->
+<div class="background">
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header>
+  <h2 class="logo">AI Vision</h2>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<main class="app">
+  <h1 class="animated-title">AI Image Classification</h1>
+  <p class="subtitle">Upload an image </p>
+
+  <input type="file" id="imageInput" accept="image/*">
+
+  <!-- 🔟 CIFAR-10 CLASSES (ONLY CHANGE HERE) -->
+   
+  
+  <button class="predict-btn" onclick="predict()">Predict Image</button>
+
+  <div id="preview"></div>
+  <div id="result"></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
